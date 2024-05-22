@@ -49,7 +49,7 @@ class Item {
 
 public class SILab2 {
 
-    public static float finalSum=0; // so ovaa promenliva ja zacuvuvame finalnata suma od checkCart so cel da proverime dali e namalena za 30 ili ne
+    public static float finalSum=0; // so ovaa promenliva ke se zacuva  finalnata suma od checkCart so cel da proverime dali e namalena za 30 ili ne vo Multi Condition test funkcijata
 
     public static boolean checkCart(List<Item> allItems, int payment){
         if (allItems == null){ //1
@@ -78,25 +78,18 @@ public class SILab2 {
                 }
             }
             else {
-                throw new RuntimeException("No barcode!"); //20
+                throw new RuntimeException("No barcode!"); //18
             }
-            if (item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(0) == '0'){ //21
-                sum -= 30; //22
+            if (item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(0) == '0'){ //19
+                sum -= 30; //20
             }
         }
-        finalSum = sum;
-        if (sum <= payment){ //23
-            return true; //24
+        finalSum = sum;// ovaa linija ne e del od originalniot kod i ja koristam 
+        if (sum <= payment){ //21
+            return true; //22
         }
         else {
-            return false; //25
+            return false; //23
         }
-    }//26
-
-    public static void main(String[] args) {
-        List<Item> products = new ArrayList<>(1);
-        products.add(new Item("","0213",360,4.5f));
-        System.out.println(checkCart(products,250));
-        //,payment:130
-    }
+    }//24
 }
