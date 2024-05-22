@@ -14,8 +14,6 @@
 
 ### Тест случаи според Every Branch критериумот:
 
-![Test Case](https://drive.google.com/file/d/1mwBNV8FhKZVXVF-Z_6SATXy1fs1wmIkX/view)
-
 Тест примери:
      1. Item("","0213",360,4.5f),payment:250
      2. null,payment:200
@@ -23,12 +21,18 @@
      4. Item("Cedevita","-1",78,5.3f),payment:300
      5. Item("Leb",null,35,3.4f),payment:130
 
+![Test Case](https://drive.google.com/file/d/1mwBNV8FhKZVXVF-Z_6SATXy1fs1wmIkX/view?usp=sharing)
+
 ### Тест случаи според тест критериумот за  Multiple Condition 
 
  if (item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(0) == '0')
  
 Можни услови:
-	Т && T && T => item.getPrice()>300, item.getDiscount() > 0, item.getBarcode().charAt(0) == '0'
-	F && X && X => item.getPrice()<=300,item.getDiscount() = anything, item.getBarcode().charAt(0) = anything
-        T && F && X => item.getPrice()>300,item.getDiscount()<=0, item.getBarcode().charAt(0) = anything
-        T && T && F => item.getPrice()>300,item.getDiscount()>0, item.getBarcode().charAt(0) != '0'
+
+Т && T && T => item.getPrice()>300, item.getDiscount() > 0, item.getBarcode().charAt(0) == '0'
+
+F && X && X => item.getPrice()<=300,item.getDiscount() = anything, item.getBarcode().charAt(0) = anything
+
+T && F && X => item.getPrice()>300,item.getDiscount()<=0, item.getBarcode().charAt(0) = anything
+
+T && T && F => item.getPrice()>300,item.getDiscount()>0, item.getBarcode().charAt(0) != '0'
