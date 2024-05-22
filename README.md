@@ -16,9 +16,13 @@
 
 Тест примери:
      1. Item("","0213",360,4.5f),payment:250
+     
      2. null,payment:200
+     
      3. Item("Nivea Kozmetika","0813",350,0),payment 530
+     
      4. Item("Cedevita","-1",78,5.3f),payment:300
+     
      5. Item("Leb",null,35,3.4f),payment:130
 
 ![Test Case](https://github.com/Hekaton003/SI_2024_lab2_226035/blob/master/EveryBranchCriterium.jpg?raw=true)
