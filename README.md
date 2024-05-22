@@ -21,7 +21,9 @@
      4. Item("Cedevita","-1",78,5.3f),payment:300
      5. Item("Leb",null,35,3.4f),payment:130
 
-![Test Case](https://drive.google.com/file/d/1mwBNV8FhKZVXVF-Z_6SATXy1fs1wmIkX/view?usp=sharing)
+![Test Case](https://github.com/Hekaton003/SI_2024_lab2_226035/blob/master/EveryBranchCriterium.jpg?raw=true)
+
+Напомена: 1-поминува а 0-не поминува
 
 ### Тест случаи според тест критериумот за  Multiple Condition 
 
