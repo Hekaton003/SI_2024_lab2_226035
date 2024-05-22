@@ -18,30 +18,30 @@ class SILab2Test {
        Item item3 = new Item("Cedevita","-1",78,5.3f);
        Item item4 =  new Item("Leb",null,35,3.4f);
 
-       //1,3,4.1,4.2,5,6,7,8,9,10,11.1,11.2,12,13,11.3,15,16,21,22,4.3,23,25,26
+       //1,3,4.1,4.2,5,6,7,8,9,10,11.1,11.2,12,13,11.3,15,16,19,20,4.3,21,23,24
        productsList.add(item1);
        boolean result = SILab2.checkCart(productsList,250);
        assertFalse(result);
        productsList.remove(item1);
 
-       //1,2,26
+       //1,2,24
        RuntimeException ex;
        ex = assertThrows(RuntimeException.class,()->SILab2.checkCart(null,200));
        assertTrue(ex.getMessage().contains("allItems list can't be null!"));
 
-       //1,3,4.1,4.2,5,6,8,9,10,11.1,11.2,12,13,11.3,15,17,21,4.3,23,24,26
+       //1,3,4.1,4.2,5,6,8,9,10,11.1,11.2,12,13,11.3,15,17,19,4.3,21,22,24
        productsList.add(item2);
        result = SILab2.checkCart(productsList,530);
        assertTrue(result);
        productsList.remove(item2);
 
-       //1,3,4.1,4.2,5,6,8,9,10,11.1,11.2,12,13,14,26
+       //1,3,4.1,4.2,5,6,8,9,10,11.1,11.2,12,13,14,24
        productsList.add(item3);
        ex = assertThrows(RuntimeException.class,()->SILab2.checkCart(productsList,300));
        assertTrue(ex.getMessage().contains("Invalid character in item barcode!"));
        productsList.remove(item3);
 
-       //1,3,4.1,4.2,5,6,8,20,26
+       //1,3,4.1,4.2,5,6,8,18,24
        productsList.add(item4);
        ex = assertThrows(RuntimeException.class,()->SILab2.checkCart(productsList,130));
        assertTrue(ex.getMessage().contains("No barcode!"));
