@@ -84,7 +84,7 @@ public class SILab2 {
                 sum -= 30; //20
             }
         }
-        finalSum = sum;// ovaa linija ne e del od originalniot kod i ja koristam 
+        finalSum = sum;// ovaa linija ne e del od originalniot kod 
         if (sum <= payment){ //21
             return true; //22
         }
