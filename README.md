@@ -1,12 +1,12 @@
-#Втора лабораториска вежба по софтверско инженерство
+# Втора лабораториска вежба по софтверско инженерство
 
 ## Јован Давалиев 226035
 
-###Одговори
+### Одговори
 
 #### Control Flow Graph 
 
- ![Project graph](https://drive.google.com/file/d/1deAU837j8UIr82qma_fnWt6Zhoj_3XlW/view)
+ ![Project graph](https://github.com/Hekaton003/SI_2024_lab2_226035/blob/master/ControlFlowGraph.jpg?raw=true)
 
 ### Цикломатската комплексност
 
