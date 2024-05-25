@@ -43,3 +43,5 @@ F && X && X => item.getPrice()<=300,item.getDiscount() = anything, item.getBarco
 T && F && X => item.getPrice()>300,item.getDiscount()<=0, item.getBarcode().charAt(0) = anything
 
 T && T && F => item.getPrice()>300,item.getDiscount()>0, item.getBarcode().charAt(0) != '0'
+
+![Multi case](https://github.com/Hekaton003/project1/blob/main/MultiConditional.png?raw=true)
